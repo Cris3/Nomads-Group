@@ -1,8 +1,8 @@
 # Numeric Sequence Calculator
 
 The GIT repository has 2 main directories:
-- 1. NumericSequenceCalculator which contains the **Numeric Sequence Calculator** and the **Unit Test** projects
-- 2. NumericSequenceCalculatorUITest which contains the **UI Test** project
+- NumericSequenceCalculator which contains the **Numeric Sequence Calculator** and the **Unit Test** projects
+- NumericSequenceCalculatorUITest which contains the **UI Test** project
 
 All projects must be opened in Visual Studio 2013 or later.
 
