@@ -1,0 +1,4 @@
+E:\Personale\curriculum\Jobs\Nomads Group\NumericSequenceCalculatorUITest\NumericSequenceCalculatorUITest\bin\Debug\NumericSequenceCalculatorUITest.dll
+E:\Personale\curriculum\Jobs\Nomads Group\NumericSequenceCalculatorUITest\NumericSequenceCalculatorUITest\bin\Debug\NumericSequenceCalculatorUITest.pdb
+E:\Personale\curriculum\Jobs\Nomads Group\NumericSequenceCalculatorUITest\NumericSequenceCalculatorUITest\obj\Debug\NumericSequenceCalculatorUITest.dll
+E:\Personale\curriculum\Jobs\Nomads Group\NumericSequenceCalculatorUITest\NumericSequenceCalculatorUITest\obj\Debug\NumericSequenceCalculatorUITest.pdb
