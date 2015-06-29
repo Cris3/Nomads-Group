@@ -1,4 +1,4 @@
-# Nomads-Group
+# Numeric Sequence Calculator
 
 The GIT repository has 2 main directories:
 - 1. NumericSequenceCalculator which contains the **Numeric Sequence Calculator** project and **Unit Test** projects
