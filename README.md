@@ -6,7 +6,8 @@ The GIT repository has 2 main directories:
 
 All projects must be opened in Visual Studio 2013 or later.
 
-**Numeric Sequence Calculator project**
+Numeric Sequence Calculator project
+--------------
 To start, open the solution file NumericSequenceCalculator.sln located in the NumericSequenceCalculator directory.
 Then run the *Numeric Sequence Calculator* project to display the web page where numbers can be entered, and the 6 numeric sequence lists can be displayed, as required by the test.
 
