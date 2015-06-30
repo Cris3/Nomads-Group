@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NumericSequenceCalculator.App_Code;
 using NumericSequenceCalculator.Models;
+using System.Collections.Generic;
 
 namespace NumericSequenceCalculator.Tests
 {
@@ -12,6 +13,7 @@ namespace NumericSequenceCalculator.Tests
         }
 
         NumericCalculation numericCalculation = new NumericCalculation();
+        NumericListGenerator numericListGenerator = new NumericListGenerator();
         InputNumber inputNumber = new InputNumber();
 
         [TestMethod()]
@@ -87,16 +89,21 @@ namespace NumericSequenceCalculator.Tests
         }
 
         [TestMethod()]
-        public void IsNumberFibonacciTest() //S3.1.5: Test if number is fibonacci
+        public void FibonacciSequenceTest() //S3.1.5: Test if Fibonacci function returns a List object with values
         {
             InputNumber inputNumber = new InputNumber()
             {
                 Number = 34
             };
 
-            bool isNumberFibonacci = numericCalculation.IsNumberFibonacci(inputNumber.Number);
+            List<int> fibonacciNumbers = numericListGenerator.FibonacciSequence(inputNumber.Number);
 
-            Assert.IsTrue(isNumberFibonacci);
+            bool hasPassedTest = false;
+            if (fibonacciNumbers != null && fibonacciNumbers.Count > 0) {
+                hasPassedTest = true;
+            }
+
+            Assert.IsTrue(hasPassedTest);
         }
     }
 }

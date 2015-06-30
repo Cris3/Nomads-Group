@@ -4,68 +4,38 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <p class="lead">
-        Please enter a sequence of positive integer numbers (one at a time), then click on the &lsquo;Add Number&rsquo; button, and see under which list shown below the numbers belong to.
-    </p>
+<div style="height:20px;"></div>
+<p class="cite">
+    Please enter a positive integer, then click on the &lsquo;Submit&rsquo; button to generate seven different sequences of numbers, all containing values up to the number entered.
+</p>
 
-    @using (Html.BeginForm("Index", "Home", null, FormMethod.Post, new { @class = "clearfix", role = "form" }))
-    {
-        @Html.AntiForgeryToken()
-        <div class="row">
-            <div class="col-md-12">
-                <div class="form-group">
-                    <div style="float:left; padding-right:20px;">
-                        @Html.LabelFor(m => m.Number)
-                    </div>
-                    <div style="float:left; padding-right:20px;">
-                        @Html.TextBoxFor(m => m.Number, new { @class = "form-control" })
-                    </div>
-                    <div style="float:left; padding-right:20px;">
-                        <button type="submit" class="btn pull-left btn-default" id="form-numeric-sequence-calculator-submit">Add Number</button>
-                    </div>
-                    <div style="float:left; padding-right:20px;">
-                        @Html.ActionLink("Clear Lists", "Index", null, new { @class = "btn pull-left btn-default" })
-                    </div>
-                    <div style="clear:both; height:10px;"></div>
-
-                    @Html.ValidationMessageFor(m => m.Number, "", new { @class = "text-danger" })
-                    @Html.Label("ErrorLable", (string)ViewBag.ErrorMSG, new { @class = "text-danger" })
-                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                </div>
-            </div>
-        </div>
-    }
-</div>
 <div class="row">
     <div class="col-md-12">
-        <header><h2>Sequence Lists</h2></header>
+        <div class="form-group">
+            @using (Ajax.BeginForm("GenerateLists", "Home", null, new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "form_response", HttpMethod = "Post", LoadingElementId = "loading" }, new { @class = "clearfix", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
 
-        <h3>All Entered Numbers</h3>
-        @ViewBag.AllNumbers
-        <div style="height:10px;"></div>
+                <div style="float:left; padding-right:20px;">
+                    @Html.LabelFor(m => m.Number, new { @class = "lead" })
+                </div>
+                <div style="float:left; padding-right:20px;">
+                    @Html.TextBoxFor(m => m.Number, new { @class = "form-control" })
+                </div>
+                <div style="float:left; padding-right:20px;">
+                    <button type="submit" class="btn pull-left btn-default" id="form-numeric-sequence-calculator-submit">Submit</button>
+                </div>
+                <div style="float:left; padding-right:20px;">
+                    @Html.ActionLink("Clear Lists", "Index", null, new { @class = "btn pull-left btn-default" })
+                </div>
+                <div style="clear:both; height:10px;"></div>
 
-        <h3>Odd Numbers</h3>
-        @ViewBag.OddNumbers
-        <div style="height:10px;"></div>
-
-        <h3>Even Numbers</h3>
-        @ViewBag.EvenNumbers
-        <div style="height:10px;"></div>
-
-        <h3>All Numbers <span style="font-size:smaller;">(Multiples of 3 shown as &lsquo;C&rsquo;)</span></h3>
-        @ViewBag.AllNumbersExceptMultipleOf3
-        <div style="height:10px;"></div>
-
-        <h3>All Numbers <span style="font-size:smaller;">(Multiples of 5 shown as &lsquo;E&rsquo;)</span></h3>
-        @ViewBag.AllNumbersExceptMultipleOf5
-        <div style="height:10px;"></div>
-
-        <h3>All Numbers <span style="font-size:smaller;">(Multiples of 3 &amp; 5 shown as &lsquo;Z&rsquo;)</span></h3>
-        @ViewBag.AllNumbersExceptMultipleOf3And5
-        <div style="height:10px;"></div>
-
-        <h3>Fibonacci Numbers</h3>
-        @ViewBag.FibonacciNumbers
+                @Html.ValidationMessageFor(m => m.Number, "", new { @class = "text-danger" })
+                <div id="loading" class="pull-left">
+                    <img src="~/images/AjaxLoader.gif" /> &nbsp; Please wait...
+                </div>
+                <div id="form_response"></div>
+            }
+        </div>
     </div>
 </div>

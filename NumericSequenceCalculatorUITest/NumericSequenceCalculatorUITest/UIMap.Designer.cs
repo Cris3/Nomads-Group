@@ -30,132 +30,45 @@ namespace NumericSequenceCalculatorUITest
     {
         
         /// <summary>
-        /// AddedFirstNumber_Valid - Use 'AddedFirstNumber_ValidParams' to pass parameters into this method.
+        /// NumberEntered - Use 'NumberEnteredParams' to pass parameters into this method.
         /// </summary>
-        public void AddedFirstNumber_Valid()
+        public void NumberEntered()
         {
             #region Variable Declarations
             HtmlEdit uINumberEdit = this.UIHomePageNumericSequeWindow.UIHomePageNumericSequeDocument.UINumberEdit;
-            HtmlButton uIAddNumberButton = this.UIHomePageNumericSequeWindow.UIHomePageNumericSequeDocument.UIAddNumberButton;
+            HtmlButton uISubmitButton = this.UIHomePageNumericSequeWindow.UIHomePageNumericSequeDocument.UISubmitButton;
             #endregion
 
-            // Type '5' in 'Number' text box
-            uINumberEdit.Text = this.AddedFirstNumber_ValidParams.UINumberEditText;
+            // Type '98' in 'Number' text box
+            uINumberEdit.Text = this.NumberEnteredParams.UINumberEditText;
 
-            // Click 'Add Number' button
-            Mouse.Click(uIAddNumberButton, new Point(28, 16));
+            // Click 'Submit' button
+            Mouse.Click(uISubmitButton, new Point(30, 17));
         }
         
         /// <summary>
-        /// AddedSecondNumber_Invalid - Use 'AddedSecondNumber_InvalidParams' to pass parameters into this method.
+        /// ListsCleared
         /// </summary>
-        public void AddedSecondNumber_Invalid()
+        public void ListsCleared()
         {
             #region Variable Declarations
-            HtmlEdit uINumberEdit = this.UIHomePageNumericSequeWindow.UIHomePageNumericSequeDocument1.UINumberEdit;
-            HtmlButton uIAddNumberButton = this.UIHomePageNumericSequeWindow.UIHomePageNumericSequeDocument1.UIAddNumberButton;
-            #endregion
-
-            // Type '-9' in 'Number' text box
-            uINumberEdit.Text = this.AddedSecondNumber_InvalidParams.UINumberEditText;
-
-            // Click 'Add Number' button
-            Mouse.Click(uIAddNumberButton, new Point(34, 13));
-        }
-        
-        /// <summary>
-        /// AddedThirdNumber_Valid - Use 'AddedThirdNumber_ValidParams' to pass parameters into this method.
-        /// </summary>
-        public void AddedThirdNumber_Valid()
-        {
-            #region Variable Declarations
-            HtmlEdit uINumberEdit1 = this.UIHomePageNumericSequeWindow.UIHomePageNumericSequeDocument1.UINumberEdit1;
-            HtmlButton uIAddNumberButton = this.UIHomePageNumericSequeWindow.UIHomePageNumericSequeDocument1.UIAddNumberButton;
-            #endregion
-
-            // Type '20' in 'Number' text box
-            uINumberEdit1.Text = this.AddedThirdNumber_ValidParams.UINumberEdit1Text;
-
-            // Click 'Add Number' button
-            Mouse.Click(uIAddNumberButton, new Point(31, 16));
-        }
-        
-        /// <summary>
-        /// AddedFourthNumber_Valid - Use 'AddedFourthNumber_ValidParams' to pass parameters into this method.
-        /// </summary>
-        public void AddedFourthNumber_Valid()
-        {
-            #region Variable Declarations
-            HtmlEdit uINumberEdit2 = this.UIHomePageNumericSequeWindow.UIHomePageNumericSequeDocument1.UINumberEdit2;
-            HtmlButton uIAddNumberButton = this.UIHomePageNumericSequeWindow.UIHomePageNumericSequeDocument1.UIAddNumberButton;
-            #endregion
-
-            // Type '15' in 'Number' text box
-            uINumberEdit2.Text = this.AddedFourthNumber_ValidParams.UINumberEdit2Text;
-
-            // Click 'Add Number' button
-            Mouse.Click(uIAddNumberButton, new Point(65, 24));
-        }
-        
-        /// <summary>
-        /// ClearedLists
-        /// </summary>
-        public void ClearedLists()
-        {
-            #region Variable Declarations
-            HtmlHyperlink uIClearListsHyperlink = this.UIHomePageNumericSequeWindow.UIHomePageNumericSequeDocument1.UIClearListsHyperlink;
+            HtmlHyperlink uIClearListsHyperlink = this.UIHomePageNumericSequeWindow.UIHomePageNumericSequeDocument.UIForm0Custom.UIClearListsHyperlink;
             #endregion
 
             // Click 'Clear Lists' link
-            Mouse.Click(uIClearListsHyperlink, new Point(47, 17));
+            Mouse.Click(uIClearListsHyperlink, new Point(31, 14));
         }
         
         #region Properties
-        public virtual AddedFirstNumber_ValidParams AddedFirstNumber_ValidParams
+        public virtual NumberEnteredParams NumberEnteredParams
         {
             get
             {
-                if ((this.mAddedFirstNumber_ValidParams == null))
+                if ((this.mNumberEnteredParams == null))
                 {
-                    this.mAddedFirstNumber_ValidParams = new AddedFirstNumber_ValidParams();
+                    this.mNumberEnteredParams = new NumberEnteredParams();
                 }
-                return this.mAddedFirstNumber_ValidParams;
-            }
-        }
-        
-        public virtual AddedSecondNumber_InvalidParams AddedSecondNumber_InvalidParams
-        {
-            get
-            {
-                if ((this.mAddedSecondNumber_InvalidParams == null))
-                {
-                    this.mAddedSecondNumber_InvalidParams = new AddedSecondNumber_InvalidParams();
-                }
-                return this.mAddedSecondNumber_InvalidParams;
-            }
-        }
-        
-        public virtual AddedThirdNumber_ValidParams AddedThirdNumber_ValidParams
-        {
-            get
-            {
-                if ((this.mAddedThirdNumber_ValidParams == null))
-                {
-                    this.mAddedThirdNumber_ValidParams = new AddedThirdNumber_ValidParams();
-                }
-                return this.mAddedThirdNumber_ValidParams;
-            }
-        }
-        
-        public virtual AddedFourthNumber_ValidParams AddedFourthNumber_ValidParams
-        {
-            get
-            {
-                if ((this.mAddedFourthNumber_ValidParams == null))
-                {
-                    this.mAddedFourthNumber_ValidParams = new AddedFourthNumber_ValidParams();
-                }
-                return this.mAddedFourthNumber_ValidParams;
+                return this.mNumberEnteredParams;
             }
         }
         
@@ -173,75 +86,24 @@ namespace NumericSequenceCalculatorUITest
         #endregion
         
         #region Fields
-        private AddedFirstNumber_ValidParams mAddedFirstNumber_ValidParams;
-        
-        private AddedSecondNumber_InvalidParams mAddedSecondNumber_InvalidParams;
-        
-        private AddedThirdNumber_ValidParams mAddedThirdNumber_ValidParams;
-        
-        private AddedFourthNumber_ValidParams mAddedFourthNumber_ValidParams;
+        private NumberEnteredParams mNumberEnteredParams;
         
         private UIHomePageNumericSequeWindow mUIHomePageNumericSequeWindow;
         #endregion
     }
     
     /// <summary>
-    /// Parameters to be passed into 'AddedFirstNumber_Valid'
+    /// Parameters to be passed into 'NumberEntered'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
-    public class AddedFirstNumber_ValidParams
+    public class NumberEnteredParams
     {
         
         #region Fields
         /// <summary>
-        /// Type '5' in 'Number' text box
+        /// Type '98' in 'Number' text box
         /// </summary>
-        public string UINumberEditText = "5";
-        #endregion
-    }
-    
-    /// <summary>
-    /// Parameters to be passed into 'AddedSecondNumber_Invalid'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
-    public class AddedSecondNumber_InvalidParams
-    {
-        
-        #region Fields
-        /// <summary>
-        /// Type '-9' in 'Number' text box
-        /// </summary>
-        public string UINumberEditText = "-9";
-        #endregion
-    }
-    
-    /// <summary>
-    /// Parameters to be passed into 'AddedThirdNumber_Valid'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
-    public class AddedThirdNumber_ValidParams
-    {
-        
-        #region Fields
-        /// <summary>
-        /// Type '20' in 'Number' text box
-        /// </summary>
-        public string UINumberEdit1Text = "20";
-        #endregion
-    }
-    
-    /// <summary>
-    /// Parameters to be passed into 'AddedFourthNumber_Valid'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
-    public class AddedFourthNumber_ValidParams
-    {
-        
-        #region Fields
-        /// <summary>
-        /// Type '15' in 'Number' text box
-        /// </summary>
-        public string UINumberEdit2Text = "15";
+        public string UINumberEditText = "98";
         #endregion
     }
     
@@ -275,24 +137,10 @@ namespace NumericSequenceCalculatorUITest
                 return this.mUIHomePageNumericSequeDocument;
             }
         }
-        
-        public UIHomePageNumericSequeDocument1 UIHomePageNumericSequeDocument1
-        {
-            get
-            {
-                if ((this.mUIHomePageNumericSequeDocument1 == null))
-                {
-                    this.mUIHomePageNumericSequeDocument1 = new UIHomePageNumericSequeDocument1(this);
-                }
-                return this.mUIHomePageNumericSequeDocument1;
-            }
-        }
         #endregion
         
         #region Fields
         private UIHomePageNumericSequeDocument mUIHomePageNumericSequeDocument;
-        
-        private UIHomePageNumericSequeDocument1 mUIHomePageNumericSequeDocument1;
         #endregion
     }
     
@@ -301,79 +149,6 @@ namespace NumericSequenceCalculatorUITest
     {
         
         public UIHomePageNumericSequeDocument(UITestControl searchLimitContainer) : 
-                base(searchLimitContainer)
-        {
-            #region Search Criteria
-            this.SearchProperties[HtmlDocument.PropertyNames.Id] = null;
-            this.SearchProperties[HtmlDocument.PropertyNames.RedirectingPage] = "False";
-            this.SearchProperties[HtmlDocument.PropertyNames.FrameDocument] = "False";
-            this.FilterProperties[HtmlDocument.PropertyNames.Title] = "Home Page - Numeric Sequence Calculator";
-            this.FilterProperties[HtmlDocument.PropertyNames.AbsolutePath] = "/Home/Index";
-            this.FilterProperties[HtmlDocument.PropertyNames.PageUrl] = "http://localhost:22657/Home/Index";
-            this.WindowTitles.Add("Home Page - Numeric Sequence Calculator");
-            #endregion
-        }
-        
-        #region Properties
-        public HtmlEdit UINumberEdit
-        {
-            get
-            {
-                if ((this.mUINumberEdit == null))
-                {
-                    this.mUINumberEdit = new HtmlEdit(this);
-                    #region Search Criteria
-                    this.mUINumberEdit.SearchProperties[HtmlEdit.PropertyNames.Id] = "Number";
-                    this.mUINumberEdit.SearchProperties[HtmlEdit.PropertyNames.Name] = "Number";
-                    this.mUINumberEdit.FilterProperties[HtmlEdit.PropertyNames.LabeledBy] = "Number";
-                    this.mUINumberEdit.FilterProperties[HtmlEdit.PropertyNames.Type] = "SINGLELINE";
-                    this.mUINumberEdit.FilterProperties[HtmlEdit.PropertyNames.Title] = null;
-                    this.mUINumberEdit.FilterProperties[HtmlEdit.PropertyNames.Class] = "form-control";
-                    this.mUINumberEdit.FilterProperties[HtmlEdit.PropertyNames.ControlDefinition] = "name=\"Number\" class=\"form-control\" id=\"N";
-                    this.mUINumberEdit.FilterProperties[HtmlEdit.PropertyNames.TagInstance] = "2";
-                    this.mUINumberEdit.WindowTitles.Add("Home Page - Numeric Sequence Calculator");
-                    #endregion
-                }
-                return this.mUINumberEdit;
-            }
-        }
-        
-        public HtmlButton UIAddNumberButton
-        {
-            get
-            {
-                if ((this.mUIAddNumberButton == null))
-                {
-                    this.mUIAddNumberButton = new HtmlButton(this);
-                    #region Search Criteria
-                    this.mUIAddNumberButton.SearchProperties[HtmlButton.PropertyNames.Id] = "form-numeric-sequence-calculator-submit";
-                    this.mUIAddNumberButton.SearchProperties[HtmlButton.PropertyNames.Name] = null;
-                    this.mUIAddNumberButton.SearchProperties[HtmlButton.PropertyNames.DisplayText] = "Add Number";
-                    this.mUIAddNumberButton.SearchProperties[HtmlButton.PropertyNames.Type] = "submit";
-                    this.mUIAddNumberButton.FilterProperties[HtmlButton.PropertyNames.Title] = null;
-                    this.mUIAddNumberButton.FilterProperties[HtmlButton.PropertyNames.Class] = "btn pull-left btn-default";
-                    this.mUIAddNumberButton.FilterProperties[HtmlButton.PropertyNames.ControlDefinition] = "class=\"btn pull-left btn-default\" id=\"fo";
-                    this.mUIAddNumberButton.FilterProperties[HtmlButton.PropertyNames.TagInstance] = "2";
-                    this.mUIAddNumberButton.WindowTitles.Add("Home Page - Numeric Sequence Calculator");
-                    #endregion
-                }
-                return this.mUIAddNumberButton;
-            }
-        }
-        #endregion
-        
-        #region Fields
-        private HtmlEdit mUINumberEdit;
-        
-        private HtmlButton mUIAddNumberButton;
-        #endregion
-    }
-    
-    [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
-    public class UIHomePageNumericSequeDocument1 : HtmlDocument
-    {
-        
-        public UIHomePageNumericSequeDocument1(UITestControl searchLimitContainer) : 
                 base(searchLimitContainer)
         {
             #region Search Criteria
@@ -411,75 +186,70 @@ namespace NumericSequenceCalculatorUITest
             }
         }
         
-        public HtmlButton UIAddNumberButton
+        public HtmlButton UISubmitButton
         {
             get
             {
-                if ((this.mUIAddNumberButton == null))
+                if ((this.mUISubmitButton == null))
                 {
-                    this.mUIAddNumberButton = new HtmlButton(this);
+                    this.mUISubmitButton = new HtmlButton(this);
                     #region Search Criteria
-                    this.mUIAddNumberButton.SearchProperties[HtmlButton.PropertyNames.Id] = "form-numeric-sequence-calculator-submit";
-                    this.mUIAddNumberButton.SearchProperties[HtmlButton.PropertyNames.Name] = null;
-                    this.mUIAddNumberButton.SearchProperties[HtmlButton.PropertyNames.DisplayText] = "Add Number";
-                    this.mUIAddNumberButton.SearchProperties[HtmlButton.PropertyNames.Type] = "submit";
-                    this.mUIAddNumberButton.FilterProperties[HtmlButton.PropertyNames.Title] = null;
-                    this.mUIAddNumberButton.FilterProperties[HtmlButton.PropertyNames.Class] = "btn pull-left btn-default";
-                    this.mUIAddNumberButton.FilterProperties[HtmlButton.PropertyNames.ControlDefinition] = "class=\"btn pull-left btn-default\" id=\"fo";
-                    this.mUIAddNumberButton.FilterProperties[HtmlButton.PropertyNames.TagInstance] = "2";
-                    this.mUIAddNumberButton.WindowTitles.Add("Home Page - Numeric Sequence Calculator");
+                    this.mUISubmitButton.SearchProperties[HtmlButton.PropertyNames.Id] = "form-numeric-sequence-calculator-submit";
+                    this.mUISubmitButton.SearchProperties[HtmlButton.PropertyNames.Name] = null;
+                    this.mUISubmitButton.SearchProperties[HtmlButton.PropertyNames.DisplayText] = "Submit";
+                    this.mUISubmitButton.SearchProperties[HtmlButton.PropertyNames.Type] = "submit";
+                    this.mUISubmitButton.FilterProperties[HtmlButton.PropertyNames.Title] = null;
+                    this.mUISubmitButton.FilterProperties[HtmlButton.PropertyNames.Class] = "btn pull-left btn-default";
+                    this.mUISubmitButton.FilterProperties[HtmlButton.PropertyNames.ControlDefinition] = "class=\"btn pull-left btn-default\" id=\"fo";
+                    this.mUISubmitButton.FilterProperties[HtmlButton.PropertyNames.TagInstance] = "2";
+                    this.mUISubmitButton.WindowTitles.Add("Home Page - Numeric Sequence Calculator");
                     #endregion
                 }
-                return this.mUIAddNumberButton;
+                return this.mUISubmitButton;
             }
         }
         
-        public HtmlEdit UINumberEdit1
+        public UIForm0Custom UIForm0Custom
         {
             get
             {
-                if ((this.mUINumberEdit1 == null))
+                if ((this.mUIForm0Custom == null))
                 {
-                    this.mUINumberEdit1 = new HtmlEdit(this);
-                    #region Search Criteria
-                    this.mUINumberEdit1.SearchProperties[HtmlEdit.PropertyNames.Id] = "Number";
-                    this.mUINumberEdit1.SearchProperties[HtmlEdit.PropertyNames.Name] = "Number";
-                    this.mUINumberEdit1.FilterProperties[HtmlEdit.PropertyNames.LabeledBy] = "Number";
-                    this.mUINumberEdit1.FilterProperties[HtmlEdit.PropertyNames.Type] = "SINGLELINE";
-                    this.mUINumberEdit1.FilterProperties[HtmlEdit.PropertyNames.Title] = null;
-                    this.mUINumberEdit1.FilterProperties[HtmlEdit.PropertyNames.Class] = "form-control input-validation-error";
-                    this.mUINumberEdit1.FilterProperties[HtmlEdit.PropertyNames.ControlDefinition] = "name=\"Number\" class=\"form-control input-";
-                    this.mUINumberEdit1.FilterProperties[HtmlEdit.PropertyNames.TagInstance] = "2";
-                    this.mUINumberEdit1.WindowTitles.Add("Home Page - Numeric Sequence Calculator");
-                    #endregion
+                    this.mUIForm0Custom = new UIForm0Custom(this);
                 }
-                return this.mUINumberEdit1;
+                return this.mUIForm0Custom;
             }
         }
+        #endregion
         
-        public HtmlEdit UINumberEdit2
+        #region Fields
+        private HtmlEdit mUINumberEdit;
+        
+        private HtmlButton mUISubmitButton;
+        
+        private UIForm0Custom mUIForm0Custom;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
+    public class UIForm0Custom : HtmlCustom
+    {
+        
+        public UIForm0Custom(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
         {
-            get
-            {
-                if ((this.mUINumberEdit2 == null))
-                {
-                    this.mUINumberEdit2 = new HtmlEdit(this);
-                    #region Search Criteria
-                    this.mUINumberEdit2.SearchProperties[HtmlEdit.PropertyNames.Id] = "Number";
-                    this.mUINumberEdit2.SearchProperties[HtmlEdit.PropertyNames.Name] = "Number";
-                    this.mUINumberEdit2.FilterProperties[HtmlEdit.PropertyNames.LabeledBy] = "Number";
-                    this.mUINumberEdit2.FilterProperties[HtmlEdit.PropertyNames.Type] = "SINGLELINE";
-                    this.mUINumberEdit2.FilterProperties[HtmlEdit.PropertyNames.Title] = null;
-                    this.mUINumberEdit2.FilterProperties[HtmlEdit.PropertyNames.Class] = "form-control valid";
-                    this.mUINumberEdit2.FilterProperties[HtmlEdit.PropertyNames.ControlDefinition] = "name=\"Number\" class=\"form-control valid\"";
-                    this.mUINumberEdit2.FilterProperties[HtmlEdit.PropertyNames.TagInstance] = "2";
-                    this.mUINumberEdit2.WindowTitles.Add("Home Page - Numeric Sequence Calculator");
-                    #endregion
-                }
-                return this.mUINumberEdit2;
-            }
+            #region Search Criteria
+            this.SearchProperties["TagName"] = "FORM";
+            this.SearchProperties["Id"] = "form0";
+            this.SearchProperties[UITestControl.PropertyNames.Name] = null;
+            this.FilterProperties["Class"] = "clearfix";
+            this.FilterProperties["ControlDefinition"] = "class=\"clearfix\" id=\"form0\" role=\"form\" ";
+            this.FilterProperties["TagInstance"] = "1";
+            this.WindowTitles.Add("Home Page - Numeric Sequence Calculator");
+            #endregion
         }
         
+        #region Properties
         public HtmlHyperlink UIClearListsHyperlink
         {
             get
@@ -497,7 +267,7 @@ namespace NumericSequenceCalculatorUITest
                     this.mUIClearListsHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Href] = "http://localhost:22657/";
                     this.mUIClearListsHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.Class] = "btn pull-left btn-default";
                     this.mUIClearListsHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.ControlDefinition] = "class=\"btn pull-left btn-default\" href=\"";
-                    this.mUIClearListsHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.TagInstance] = "3";
+                    this.mUIClearListsHyperlink.FilterProperties[HtmlHyperlink.PropertyNames.TagInstance] = "1";
                     this.mUIClearListsHyperlink.WindowTitles.Add("Home Page - Numeric Sequence Calculator");
                     #endregion
                 }
@@ -507,14 +277,6 @@ namespace NumericSequenceCalculatorUITest
         #endregion
         
         #region Fields
-        private HtmlEdit mUINumberEdit;
-        
-        private HtmlButton mUIAddNumberButton;
-        
-        private HtmlEdit mUINumberEdit1;
-        
-        private HtmlEdit mUINumberEdit2;
-        
         private HtmlHyperlink mUIClearListsHyperlink;
         #endregion
     }

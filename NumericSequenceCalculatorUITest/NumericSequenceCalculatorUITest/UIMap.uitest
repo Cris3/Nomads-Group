@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<UITest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="" Id="4599f4b4-bd9c-4c59-8a61-c1ec426b5236" AssemblyVersion="12.0.31101.0" Version="1.0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamTest/UITest/2010">
+<UITest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="" Id="d37d70d5-3c9b-4dd3-b83f-29922c59ec35" AssemblyVersion="12.0.31101.0" Version="1.0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamTest/UITest/2010">
   <Configuration>
     <Group Name="IE">
       <Setting Name="Version" Value="9.11.9600.17842" WarningLevel="1" />
@@ -43,19 +43,19 @@
   <ExecuteActions>
     <SetValueAction UIObjectName="UIMap.UIHomePageNumericSequeWindow.UIHomePageNumericSequeDocument.UINumberEdit">
       <ParameterName />
-      <Value Encoded="false">5</Value>
+      <Value Encoded="false">98</Value>
       <Type>String</Type>
     </SetValueAction>
-    <MouseAction UIObjectName="UIMap.UIHomePageNumericSequeWindow.UIHomePageNumericSequeDocument.UIAddNumberButton">
+    <MouseAction UIObjectName="UIMap.UIHomePageNumericSequeWindow.UIHomePageNumericSequeDocument.UISubmitButton">
       <ParameterName />
       <ModifierKeys>None</ModifierKeys>
       <IsGlobalHotkey>false</IsGlobalHotkey>
-      <Location X="28" Y="16" />
+      <Location X="30" Y="17" />
       <WheelDirection>0</WheelDirection>
       <ActionType>Click</ActionType>
       <MouseButton>Left</MouseButton>
     </MouseAction>
-    <TestStepMarkerAction Comment="" MarkerInformation="AddedFirstNumber_Valid">
+    <TestStepMarkerAction Comment="" MarkerInformation="NumberEntered">
       <ParameterName />
       <StepId>-1</StepId>
       <Direction>Start</Direction>
@@ -64,85 +64,16 @@
       <WorkItemId>0</WorkItemId>
       <MarkerRegionType>Action</MarkerRegionType>
     </TestStepMarkerAction>
-    <SetValueAction UIObjectName="UIMap.UIHomePageNumericSequeWindow.UIHomePageNumericSequeDocument1.UINumberEdit">
-      <ParameterName />
-      <Value Encoded="false">-9</Value>
-      <Type>String</Type>
-    </SetValueAction>
-    <MouseAction UIObjectName="UIMap.UIHomePageNumericSequeWindow.UIHomePageNumericSequeDocument1.UIAddNumberButton">
+    <MouseAction UIObjectName="UIMap.UIHomePageNumericSequeWindow.UIHomePageNumericSequeDocument.UIForm0Custom.UIClearListsHyperlink">
       <ParameterName />
       <ModifierKeys>None</ModifierKeys>
       <IsGlobalHotkey>false</IsGlobalHotkey>
-      <Location X="34" Y="13" />
+      <Location X="31" Y="14" />
       <WheelDirection>0</WheelDirection>
       <ActionType>Click</ActionType>
       <MouseButton>Left</MouseButton>
     </MouseAction>
-    <TestStepMarkerAction Comment="" MarkerInformation="AddedSecondNumber_Invalid">
-      <ParameterName />
-      <StepId>-1</StepId>
-      <Direction>Start</Direction>
-      <Outcome />
-      <Disabled>false</Disabled>
-      <WorkItemId>0</WorkItemId>
-      <MarkerRegionType>Action</MarkerRegionType>
-    </TestStepMarkerAction>
-    <SetValueAction UIObjectName="UIMap.UIHomePageNumericSequeWindow.UIHomePageNumericSequeDocument1.UINumberEdit1">
-      <ParameterName />
-      <Value Encoded="false">20</Value>
-      <Type>String</Type>
-    </SetValueAction>
-    <MouseAction UIObjectName="UIMap.UIHomePageNumericSequeWindow.UIHomePageNumericSequeDocument1.UIAddNumberButton">
-      <ParameterName />
-      <ModifierKeys>None</ModifierKeys>
-      <IsGlobalHotkey>false</IsGlobalHotkey>
-      <Location X="31" Y="16" />
-      <WheelDirection>0</WheelDirection>
-      <ActionType>Click</ActionType>
-      <MouseButton>Left</MouseButton>
-    </MouseAction>
-    <TestStepMarkerAction Comment="" MarkerInformation="AddedThirdNumber_Valid">
-      <ParameterName />
-      <StepId>-1</StepId>
-      <Direction>Start</Direction>
-      <Outcome />
-      <Disabled>false</Disabled>
-      <WorkItemId>0</WorkItemId>
-      <MarkerRegionType>Action</MarkerRegionType>
-    </TestStepMarkerAction>
-    <SetValueAction UIObjectName="UIMap.UIHomePageNumericSequeWindow.UIHomePageNumericSequeDocument1.UINumberEdit2">
-      <ParameterName />
-      <Value Encoded="false">15</Value>
-      <Type>String</Type>
-    </SetValueAction>
-    <MouseAction UIObjectName="UIMap.UIHomePageNumericSequeWindow.UIHomePageNumericSequeDocument1.UIAddNumberButton">
-      <ParameterName />
-      <ModifierKeys>None</ModifierKeys>
-      <IsGlobalHotkey>false</IsGlobalHotkey>
-      <Location X="65" Y="24" />
-      <WheelDirection>0</WheelDirection>
-      <ActionType>Click</ActionType>
-      <MouseButton>Left</MouseButton>
-    </MouseAction>
-    <TestStepMarkerAction Comment="" MarkerInformation="AddedFourthNumber_Valid">
-      <ParameterName />
-      <StepId>-1</StepId>
-      <Direction>Start</Direction>
-      <Outcome />
-      <Disabled>false</Disabled>
-      <WorkItemId>0</WorkItemId>
-      <MarkerRegionType>Action</MarkerRegionType>
-    </TestStepMarkerAction>
-    <MouseAction UIObjectName="UIMap.UIHomePageNumericSequeWindow.UIHomePageNumericSequeDocument1.UIClearListsHyperlink">
-      <ParameterName />
-      <ModifierKeys>None</ModifierKeys>
-      <IsGlobalHotkey>false</IsGlobalHotkey>
-      <Location X="47" Y="17" />
-      <WheelDirection>0</WheelDirection>
-      <ActionType>Click</ActionType>
-      <MouseButton>Left</MouseButton>
-    </MouseAction>
-    <TestStepMarkerAction Comment="" MarkerInformation="ClearedLists">
+    <TestStepMarkerAction Comment="" MarkerInformation="ListsCleared">
       <ParameterName />
       <StepId>-1</StepId>
       <Direction>Start</Direction>
@@ -157,7 +88,7 @@
   <Maps>
     <UIMap Id="UIMap">
       <TopLevelWindows>
-        <TopLevelWindow ControlType="Window" Id="UIHomePageNumericSequeWindow" FriendlyName="Home Page - Numeric Sequence Calculator - Internet..." SpecialControlType="BrowserWindow" SessionId="921586">
+        <TopLevelWindow ControlType="Window" Id="UIHomePageNumericSequeWindow" FriendlyName="Home Page - Numeric Sequence Calculator - Internet..." SpecialControlType="BrowserWindow" SessionId="13373632">
           <TechnologyName>MSAA</TechnologyName>
           <WindowTitles>
             <WindowTitle>Home Page - Numeric Sequence Calculator</WindowTitle>
@@ -173,77 +104,6 @@
           <SupportLevel>0</SupportLevel>
           <Descendants>
             <UIObject ControlType="Document" Id="UIHomePageNumericSequeDocument" FriendlyName="Home Page - Numeric Sequence Calculator" SpecialControlType="None">
-              <TechnologyName>Web</TechnologyName>
-              <WindowTitles>
-                <WindowTitle>Home Page - Numeric Sequence Calculator</WindowTitle>
-              </WindowTitles>
-              <AndCondition Id="SearchCondition">
-                <AndCondition Id="Primary">
-                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
-                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
-                  <PropertyCondition Name="Id" />
-                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
-                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
-                </AndCondition>
-                <FilterCondition Id="Secondary">
-                  <PropertyCondition Name="Title">Home Page - Numeric Sequence Calculator</PropertyCondition>
-                  <PropertyCondition Name="AbsolutePath">/Home/Index</PropertyCondition>
-                  <PropertyCondition Name="PageUrl">http://localhost:22657/Home/Index</PropertyCondition>
-                </FilterCondition>
-              </AndCondition>
-              <SupportLevel>0</SupportLevel>
-              <Descendants>
-                <UIObject ControlType="Edit" Id="UINumberEdit" FriendlyName="Number" SpecialControlType="None">
-                  <TechnologyName>Web</TechnologyName>
-                  <WindowTitles>
-                    <WindowTitle>Home Page - Numeric Sequence Calculator</WindowTitle>
-                  </WindowTitles>
-                  <AndCondition Id="SearchCondition">
-                    <AndCondition Id="Primary">
-                      <PropertyCondition Name="ControlType">Edit</PropertyCondition>
-                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
-                      <PropertyCondition Name="Id">Number</PropertyCondition>
-                      <PropertyCondition Name="Name">Number</PropertyCondition>
-                    </AndCondition>
-                    <FilterCondition Id="Secondary">
-                      <PropertyCondition Name="LabeledBy">Number</PropertyCondition>
-                      <PropertyCondition Name="Type">SINGLELINE</PropertyCondition>
-                      <PropertyCondition Name="Title" />
-                      <PropertyCondition Name="Class">form-control</PropertyCondition>
-                      <PropertyCondition Name="ControlDefinition">name="Number" class="form-control" id="N</PropertyCondition>
-                      <PropertyCondition Name="TagInstance">2</PropertyCondition>
-                    </FilterCondition>
-                  </AndCondition>
-                  <SupportLevel>0</SupportLevel>
-                  <Descendants />
-                </UIObject>
-                <UIObject ControlType="Button" Id="UIAddNumberButton" FriendlyName="Add Number" SpecialControlType="None">
-                  <TechnologyName>Web</TechnologyName>
-                  <WindowTitles>
-                    <WindowTitle>Home Page - Numeric Sequence Calculator</WindowTitle>
-                  </WindowTitles>
-                  <AndCondition Id="SearchCondition">
-                    <AndCondition Id="Primary">
-                      <PropertyCondition Name="ControlType">Button</PropertyCondition>
-                      <PropertyCondition Name="TagName">BUTTON</PropertyCondition>
-                      <PropertyCondition Name="Id">form-numeric-sequence-calculator-submit</PropertyCondition>
-                      <PropertyCondition Name="Name" />
-                      <PropertyCondition Name="DisplayText">Add Number</PropertyCondition>
-                      <PropertyCondition Name="Type">submit</PropertyCondition>
-                    </AndCondition>
-                    <FilterCondition Id="Secondary">
-                      <PropertyCondition Name="Title" />
-                      <PropertyCondition Name="Class">btn pull-left btn-default</PropertyCondition>
-                      <PropertyCondition Name="ControlDefinition">class="btn pull-left btn-default" id="fo</PropertyCondition>
-                      <PropertyCondition Name="TagInstance">2</PropertyCondition>
-                    </FilterCondition>
-                  </AndCondition>
-                  <SupportLevel>0</SupportLevel>
-                  <Descendants />
-                </UIObject>
-              </Descendants>
-            </UIObject>
-            <UIObject ControlType="Document" Id="UIHomePageNumericSequeDocument1" FriendlyName="Home Page - Numeric Sequence Calculator" SpecialControlType="None">
               <TechnologyName>Web</TechnologyName>
               <WindowTitles>
                 <WindowTitle>Home Page - Numeric Sequence Calculator</WindowTitle>
@@ -288,7 +148,7 @@
                   <SupportLevel>0</SupportLevel>
                   <Descendants />
                 </UIObject>
-                <UIObject ControlType="Button" Id="UIAddNumberButton" FriendlyName="Add Number" SpecialControlType="None">
+                <UIObject ControlType="Button" Id="UISubmitButton" FriendlyName="Submit" SpecialControlType="None">
                   <TechnologyName>Web</TechnologyName>
                   <WindowTitles>
                     <WindowTitle>Home Page - Numeric Sequence Calculator</WindowTitle>
@@ -299,7 +159,7 @@
                       <PropertyCondition Name="TagName">BUTTON</PropertyCondition>
                       <PropertyCondition Name="Id">form-numeric-sequence-calculator-submit</PropertyCondition>
                       <PropertyCondition Name="Name" />
-                      <PropertyCondition Name="DisplayText">Add Number</PropertyCondition>
+                      <PropertyCondition Name="DisplayText">Submit</PropertyCondition>
                       <PropertyCondition Name="Type">submit</PropertyCondition>
                     </AndCondition>
                     <FilterCondition Id="Secondary">
@@ -312,79 +172,53 @@
                   <SupportLevel>0</SupportLevel>
                   <Descendants />
                 </UIObject>
-                <UIObject ControlType="Edit" Id="UINumberEdit1" FriendlyName="Number" SpecialControlType="None">
+                <UIObject ControlType="Custom" Id="UIForm0Custom" FriendlyName="form0" SpecialControlType="None">
                   <TechnologyName>Web</TechnologyName>
                   <WindowTitles>
                     <WindowTitle>Home Page - Numeric Sequence Calculator</WindowTitle>
                   </WindowTitles>
                   <AndCondition Id="SearchCondition">
                     <AndCondition Id="Primary">
-                      <PropertyCondition Name="ControlType">Edit</PropertyCondition>
-                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
-                      <PropertyCondition Name="Id">Number</PropertyCondition>
-                      <PropertyCondition Name="Name">Number</PropertyCondition>
-                    </AndCondition>
-                    <FilterCondition Id="Secondary">
-                      <PropertyCondition Name="LabeledBy">Number</PropertyCondition>
-                      <PropertyCondition Name="Type">SINGLELINE</PropertyCondition>
-                      <PropertyCondition Name="Title" />
-                      <PropertyCondition Name="Class">form-control input-validation-error</PropertyCondition>
-                      <PropertyCondition Name="ControlDefinition">name="Number" class="form-control input-</PropertyCondition>
-                      <PropertyCondition Name="TagInstance">2</PropertyCondition>
-                    </FilterCondition>
-                  </AndCondition>
-                  <SupportLevel>0</SupportLevel>
-                  <Descendants />
-                </UIObject>
-                <UIObject ControlType="Edit" Id="UINumberEdit2" FriendlyName="Number" SpecialControlType="None">
-                  <TechnologyName>Web</TechnologyName>
-                  <WindowTitles>
-                    <WindowTitle>Home Page - Numeric Sequence Calculator</WindowTitle>
-                  </WindowTitles>
-                  <AndCondition Id="SearchCondition">
-                    <AndCondition Id="Primary">
-                      <PropertyCondition Name="ControlType">Edit</PropertyCondition>
-                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
-                      <PropertyCondition Name="Id">Number</PropertyCondition>
-                      <PropertyCondition Name="Name">Number</PropertyCondition>
-                    </AndCondition>
-                    <FilterCondition Id="Secondary">
-                      <PropertyCondition Name="LabeledBy">Number</PropertyCondition>
-                      <PropertyCondition Name="Type">SINGLELINE</PropertyCondition>
-                      <PropertyCondition Name="Title" />
-                      <PropertyCondition Name="Class">form-control valid</PropertyCondition>
-                      <PropertyCondition Name="ControlDefinition">name="Number" class="form-control valid"</PropertyCondition>
-                      <PropertyCondition Name="TagInstance">2</PropertyCondition>
-                    </FilterCondition>
-                  </AndCondition>
-                  <SupportLevel>0</SupportLevel>
-                  <Descendants />
-                </UIObject>
-                <UIObject ControlType="Hyperlink" Id="UIClearListsHyperlink" FriendlyName="Clear Lists" SpecialControlType="None">
-                  <TechnologyName>Web</TechnologyName>
-                  <WindowTitles>
-                    <WindowTitle>Home Page - Numeric Sequence Calculator</WindowTitle>
-                  </WindowTitles>
-                  <AndCondition Id="SearchCondition">
-                    <AndCondition Id="Primary">
-                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
-                      <PropertyCondition Name="TagName">A</PropertyCondition>
-                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="ControlType">Custom</PropertyCondition>
+                      <PropertyCondition Name="TagName">FORM</PropertyCondition>
+                      <PropertyCondition Name="Id">form0</PropertyCondition>
                       <PropertyCondition Name="Name" />
-                      <PropertyCondition Name="Target" />
-                      <PropertyCondition Name="InnerText">Clear Lists</PropertyCondition>
                     </AndCondition>
                     <FilterCondition Id="Secondary">
-                      <PropertyCondition Name="AbsolutePath">/</PropertyCondition>
-                      <PropertyCondition Name="Title" />
-                      <PropertyCondition Name="Href">http://localhost:22657/</PropertyCondition>
-                      <PropertyCondition Name="Class">btn pull-left btn-default</PropertyCondition>
-                      <PropertyCondition Name="ControlDefinition">class="btn pull-left btn-default" href="</PropertyCondition>
-                      <PropertyCondition Name="TagInstance">3</PropertyCondition>
+                      <PropertyCondition Name="Class">clearfix</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="clearfix" id="form0" role="form" </PropertyCondition>
+                      <PropertyCondition Name="TagInstance">1</PropertyCondition>
                     </FilterCondition>
                   </AndCondition>
                   <SupportLevel>0</SupportLevel>
-                  <Descendants />
+                  <Descendants>
+                    <UIObject ControlType="Hyperlink" Id="UIClearListsHyperlink" FriendlyName="Clear Lists" SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>Home Page - Numeric Sequence Calculator</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                          <PropertyCondition Name="TagName">A</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                          <PropertyCondition Name="Target" />
+                          <PropertyCondition Name="InnerText">Clear Lists</PropertyCondition>
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="AbsolutePath">/</PropertyCondition>
+                          <PropertyCondition Name="Title" />
+                          <PropertyCondition Name="Href">http://localhost:22657/</PropertyCondition>
+                          <PropertyCondition Name="Class">btn pull-left btn-default</PropertyCondition>
+                          <PropertyCondition Name="ControlDefinition">class="btn pull-left btn-default" href="</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                  </Descendants>
                 </UIObject>
               </Descendants>
             </UIObject>

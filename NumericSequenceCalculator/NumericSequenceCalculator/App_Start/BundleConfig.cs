@@ -20,6 +20,7 @@ namespace NumericSequenceCalculator
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/jquery.validate.js",
                       "~/Scripts/jquery.validate.unobtrusive.js",
+                      "~/Scripts/jquery.unobtrusive-ajax.min.js",
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(

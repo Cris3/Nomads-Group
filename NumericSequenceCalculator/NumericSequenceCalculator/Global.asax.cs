@@ -19,6 +19,7 @@ namespace NumericSequenceCalculator
 
             ContainerBuilder builder = new ContainerBuilder();
             builder.RegisterType<NumericCalculation>().As<INumericCalculation>();
+            builder.RegisterType<NumericListGenerator>().As<INumericListGenerator>();
             builder.RegisterAssemblyTypes(Assembly.GetExecutingAssembly())
                 .Where(t => t.Name.EndsWith("Controller"));
 
