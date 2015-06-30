@@ -13,14 +13,14 @@ namespace NumericSequenceCalculator.Controllers
         INumericCalculation _NumericCalculation;
         INumericListGenerator _NumericListGenerator;
 
-        string listTitle_AllNumbers = "<h3>All Numbers</h3>";
-        string listTitle_OddNumbers = "<h3>Odd Numbers</h3>";
-        string listTitle_EvenNumbers = "<h3>Even Numbers</h3>";
-        string listTitle_AllNumbersExceptMultipleOf3 = "<h3>All Numbers (Multiples of 3 shown as &lsquo;C&rsquo;)</h3>";
-        string listTitle_AllNumbersExceptMultipleOf5 = "<h3>All Numbers (Multiples of 5 shown as &lsquo;E&rsquo;)</h3>";
-        string listTitle_AllNumbersExceptMultipleOf3And5 = "<h3>All Numbers (Multiples of 3 &amp; 5 shown as &lsquo;Z&rsquo;)</h3>";
-        string listTitle_FibonacciNumbers = "<h3>Fibonacci Numbers</h3>";
-        string listSpacer = "<div style=\"height:10px;\"></div>";
+        const string listTitle_AllNumbers = "<h3>All Numbers</h3>";
+        const string listTitle_OddNumbers = "<h3>Odd Numbers</h3>";
+        const string listTitle_EvenNumbers = "<h3>Even Numbers</h3>";
+        const string listTitle_AllNumbersExceptMultipleOf3 = "<h3>All Numbers (Multiples of 3 shown as &lsquo;C&rsquo;)</h3>";
+        const string listTitle_AllNumbersExceptMultipleOf5 = "<h3>All Numbers (Multiples of 5 shown as &lsquo;E&rsquo;)</h3>";
+        const string listTitle_AllNumbersExceptMultipleOf3And5 = "<h3>All Numbers (Multiples of 3 &amp; 5 shown as &lsquo;Z&rsquo;)</h3>";
+        const string listTitle_FibonacciNumbers = "<h3>Fibonacci Numbers</h3>";
+        const string listSpacer = "<div style=\"height:10px;\"></div>";
 
         public HomeController(INumericCalculation numericCalculation, INumericListGenerator numericListGenerator)
         {
@@ -146,7 +146,7 @@ namespace NumericSequenceCalculator.Controllers
                 }
             }
 
-            // If we got this far, something failed, redisplay form
+            // If we got this far, something failed
             return "<span class=\"text-danger\">An unhandled exception has occurred. Please retry submitting your number.</span>";
         }
     }
