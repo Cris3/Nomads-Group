@@ -11,7 +11,8 @@ To start, open the solution file NumericSequenceCalculator.sln located in the Nu
 Then run the **Numeric Sequence Calculator** project to display the web page where numbers can be entered, and the 7 numeric sequence lists can be displayed, as required by the test.
 
 ### Unit Test project
-The **Unit Test** project contains 6 case scenarios in order to verify if a number belongs to a specific list.
+The **Unit Test** project contains 5 case scenarios in order to verify if a number belongs to a specific list.
+It also contains one test to verify if the Fibonacci function works correctly.
 
 ### UI Test project
 To test the **UI Test** project, first make sure the **Numeric Sequence Calculator** project is running within Internet Explorer 11 (*the URL must be http://localhost:22657*).  
